@@ -1,0 +1,13 @@
+# Node.js
+node_modules/
+dist/
+build/
+
+# Java/Maven
+target/
+
+# OS/Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
