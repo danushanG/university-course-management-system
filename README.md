@@ -216,5 +216,5 @@ npm test
 - Ensure all required services are running
 - Review the API documentation for endpoint details
 
-### Author
+## Author
 - Danushan (CT/2019/032)
