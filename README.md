@@ -28,25 +28,12 @@ university-course-management/
 
 ## 🚀 Quick Start
 
-### Option 1: Using Startup Scripts (Recommended)
-
-**Windows:**
-```bash
-start.bat
-```
-
-**Linux/Mac:**
-```bash
-chmod +x start.sh
-./start.sh
-```
-
-### Option 2: Manual Startup
+### Manual Startup
 
 #### Backend (Spring Boot)
 ```bash
 cd backend
-./mvnw spring-boot:run
+mvn spring-boot:run
 ```
 Backend will be available at: http://localhost:8080
 
@@ -57,24 +44,6 @@ npm install
 npm start
 ```
 Frontend will be available at: http://localhost:3000
-
-### Option 3: Docker (Full Stack)
-```bash
-docker-compose up -d
-```
-
-### Option 4: Individual Docker Containers
-```bash
-# Build and run backend
-cd backend
-docker build -t course-management-backend .
-docker run -p 8080:8080 course-management-backend
-
-# Build and run frontend (in another terminal)
-cd frontend
-docker build -t course-management-frontend .
-docker run -p 3000:3000 course-management-frontend
-```
 
 ## 📚 Features
 
@@ -87,7 +56,6 @@ docker run -p 3000:3000 course-management-frontend
 - **Data Validation**: Input validation and error handling on both frontend and backend
 - **Search & Filter**: Advanced search and filtering capabilities
 - **Real-time Updates**: Dynamic UI updates without page refresh
-- **Mobile Responsive**: Works seamlessly on desktop, tablet, and mobile devices
 
 ## 🛠️ Tech Stack
 
@@ -150,8 +118,6 @@ The application is containerized and ready for deployment on:
 - **Render**: Easy deployment with automatic builds
 - **Heroku**: Simple deployment with Git integration
 - **Railway**: Fast deployment with automatic scaling
-- **AWS**: Enterprise-grade deployment with EC2/EKS
-- **Google Cloud Platform**: Scalable deployment with GKE
 
 ### Production Considerations
 - Replace H2 database with PostgreSQL or MySQL
@@ -191,8 +157,7 @@ This project is designed for undergraduate students learning:
 
 ## 🎯 Learning Objectives
 
-By completing this project, students will understand:
-- How to build a complete enterprise application
+- Build a complete enterprise application
 - RESTful API design principles and implementation
 - Modern frontend development with React and Material-UI
 - Database relationships and JPA entity management
@@ -222,7 +187,7 @@ By completing this project, students will understand:
 ### Backend Testing
 ```bash
 cd backend
-./mvnw test
+mvn test
 ```
 
 ### Frontend Testing
@@ -250,3 +215,6 @@ npm test
 - Verify all dependencies are installed correctly
 - Ensure all required services are running
 - Review the API documentation for endpoint details
+
+### Author
+- Danushan (CT/2019/032)
